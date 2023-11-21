@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,400;1,500;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #4B52DB;
+    width:100%;
+}
+/*header design*/
+
+
+.header{
+    background-color: black;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px;
+}
+
+/*header items design*/
+.header ul li h3{
+    color: white;
+}
+.menu-bar{
+    width:10%;
+    position: relative;
+    cursor: pointer;
+}
+.fa-bars{
+    color: white;
+    font-size: 30px;
+    padding-left: 5px;
+}
+.fa-hacker-news{
+    color: white;
+    font-size: 30px;
+}
+.header-txt{
+    width:80%;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+.user-icon{
+   width:10%;
+   text-align: right;
+   color: white;
+   font-size: 30px;
+}
+
+/* sidebar design*/
+
+.side-bar{
+    background-color: black;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease ;
+}
+.show{
+    max-height: 600px;
+    
+}
+.side-bar ul li i{
+    margin-right: 10px;
+    text-align: center;
+}
+
+.side-bar ul{
+    text-align: center;
+    list-style: none;
+     
+}
+
+strong{
+    cursor: pointer;
+}
+
+.side-bar ul li{
+    background-color: rgb(65, 65, 65);
+    border:2px solid gray;
+    margin:10px 10px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 7px;
+    flex-shrink: 1;
+    font-size: 18px;
+    letter-spacing: 1px;
+    border-radius: 20px;   
+}
+
+
+/*---------all hovers--------*/
+
+.side-bar ul li:hover{
+    background-color: aliceblue;
+    color: black;
+}
+
+
+/*=====================================================================================================================================================================terms-css=========================================================================================*/
+
+.contact-container{
+    width:35%;
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px black;
+}
+
+.contact-container form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container h1{
+   color: #4B52DB;
+   padding: 10px;
+   text-align: center;
+}
+
+.contact-container input[type=text]{
+    width:80%;
+    height: 40px;
+    background-color: #E6E6E6;
+    border: none;
+    outline:none;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 16px;
+}
+.contact-container input[type=email]{
+    width:80%;
+    height: 40px;
+    background-color: #E6E6E6;
+    border: none;
+    outline:none;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 16px;
+}
+.contact-container input[type=tel]{
+    width:80%;
+    height: 40px;
+    background-color: #E6E6E6;
+    border: none;
+    outline:none;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 16px;
+}
+.contact-container textarea{
+    width:80%;
+    height: 180px;
+    background-color: #E6E6E6;
+    border: none;
+    outline:none;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 16px;
+    resize: none;
+}
+
+.contact-container input[type=submit]{
+    width:80%;
+    height: 30px;
+    background-color: #4B52DB;
+    border:none;
+    font-weight: bold;
+    color:#fff;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 7px;
+}
+.contact-container input[type=submit]:hover{
+    background-color: #3f46da;
+   
+}
+
+.contact-container input::placeholder{
+    font-family:'Montserrat', Arial, Helvetica, sans-serif ;
+    font-size: 16px;
+}
+
+.contact-container textarea::placeholder{
+    font-family:'Montserrat', Arial, Helvetica, sans-serif ;
+    font-size: 16px;
+}
+
+@media screen and (max-width:600px)  {
+    .contact-container{
+        width:95%;
+    }
+}

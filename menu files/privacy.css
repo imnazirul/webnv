@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,400;1,500;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #4B52DB;
+    width:100%;
+}
+/*header design*/
+
+
+.header{
+    background-color: black;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px;
+}
+
+/*header items design*/
+.header ul li h3{
+    color: white;
+}
+.menu-bar{
+    width:10%;
+    position: relative;
+    cursor: pointer;
+}
+.fa-bars{
+    color: white;
+    font-size: 30px;
+    padding-left: 5px;
+}
+.fa-hacker-news{
+    color: white;
+    font-size: 30px;
+}
+.header-txt{
+    width:80%;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+.user-icon{
+   width:10%;
+   text-align: right;
+   color: white;
+   font-size: 30px;
+}
+
+/* sidebar design*/
+
+.side-bar{
+    background-color: black;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease ;
+}
+.show{
+    max-height: 600px;
+    
+}
+.side-bar ul li i{
+    margin-right: 10px;
+    text-align: center;
+}
+
+.side-bar ul{
+    text-align: center;
+    list-style: none;
+     
+}
+
+strong{
+    cursor: pointer;
+}
+
+.side-bar ul li{
+    background-color: rgb(65, 65, 65);
+    border:2px solid gray;
+    margin:10px 10px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 7px;
+    flex-shrink: 1;
+    font-size: 18px;
+    letter-spacing: 1px;
+    border-radius: 20px;   
+}
+
+
+/*---------all hovers--------*/
+
+.side-bar ul li:hover{
+    background-color: aliceblue;
+    color: black;
+}
+
+/*=====================================================================================================================================================================about-css=========================================================================================*/
+
+
+.privacy{
+    width:100%;
+    border:1px solid aliceblue;
+    
+}
+
+.privacy h1{
+    margin:20px 20px;
+    padding: 10px;
+    color: #ddd;
+    text-shadow: 1px 1px 2px black;
+    font-size: 40px;
+}
+.privacy h2{
+    background-color: cadetblue;
+    margin: 20px 30px;
+    padding: 5px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+.privacy p{
+    font-size: 18px;
+    text-align: justify;
+    margin:20px 30px;
+    color:#ddd;
+}
+.privacy .up-date{
+    font-size: 18px;
+    text-align: justify;
+    margin:20px 30px;
+
+}
