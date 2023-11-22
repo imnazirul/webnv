@@ -5,14 +5,13 @@ function openMenu(_this) {
     side.classList.toggle('show')
 
     if(side.classList.contains('show')){
-        setTimeout(function () {
+        
           thisEl.innerHTML ="&#10005"
-        },500)
        
     }else{
        setTimeout(function () {
          thisEl.innerHTML = '<i class="fa-solid fa-bars"></i>'
-        },1000)
+        },500)
   }
 
 }
